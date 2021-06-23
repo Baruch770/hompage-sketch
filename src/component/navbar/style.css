@@ -1,0 +1,116 @@
+.navbar-enter {
+    display: flex;
+    align-items: center;
+   
+    cursor: pointer;
+}
+
+/* mobile */
+.navbar-mobile {
+    background-color: rgb(0, 43, 79);
+/* variable required  */
+    padding: 1px 15px 40px !important;
+}
+
+.navbar-buttons-mobile {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: .4rem;
+    background-color: white;
+}
+
+.visible {
+    display: flex;
+
+}
+
+.navbar-buttons-mobile .navbar-enter {
+    margin-bottom: .8rem;
+}
+
+.navbar-buttons-mobile >:not(:first-child) {
+    margin-bottom: .5rem;
+    width: 100%;
+}
+
+.navbar-menue {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-top: .6rem;
+    margin-bottom: .4rem;
+}
+
+.burger {
+    padding-bottom: .2rem;
+    cursor: pointer;
+}
+
+.burger div {
+    width: 28px;
+    height: 3px !important;
+    background-color: white;
+}
+
+.burger *:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.navbar-menue .navbar-logo {
+    margin-left: 5rem;
+    max-width: 6rem;
+    height: auto;
+    cursor: pointer;
+}
+
+/* desktop */
+.navbar-desk {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+}
+
+.navbar-desk .navbar-enter {
+    margin-right: 4rem !important;
+    margin-left: 2rem !important;
+}
+
+.navbar-enter > :not(:last-child) {
+    margin-right: .4rem;
+}
+
+.logo-user {
+    width: 1.6rem;
+    height: 1.6rem;
+}
+
+.navbar-desk .navbar-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-desk .navbar-buttons > :not(:last-child) {
+    margin-right: .6rem;
+}
+
+.navbar-desk .navbar-logo {
+    margin-left: 5rem;
+    max-width: 9rem;
+    height: auto;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) { 
+    .navbar-desk {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) { 
+    .navbar-mobile {
+        display: none;
+    }
+}

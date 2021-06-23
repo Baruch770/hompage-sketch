@@ -1,0 +1,125 @@
+.sugg-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border-radius: 17px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%);
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.sugg-card:hover {
+    box-shadow: 0 3px 15px rgb(0 0 0 / 27%);
+}
+
+.sugg-card .img-wrapper {
+    width: 100%;
+    height: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.sugg-card .house-img {
+    width: 100%;
+    height: auto;
+    filter: brightness(90%);
+    position: relative;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: -moz-element(.house-img) no-repeat;
+    background-size: 100% 100%;
+} 
+
+.sugg-card  .content {
+    padding: 0 1rem 1rem 1rem;
+    width: 100%;
+}
+
+.title-img{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: .8rem;
+}
+
+.profile-img {
+    width: 4rem;
+    height:auto;
+    border-radius: 100%;
+    border: 3px solid white;
+    z-index: 20;
+    margin-top: -2rem;
+}
+
+.sugg-card .content .title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: rgb(255, 132, 38);
+    text-align: right;
+    padding: 0 1rem .1rem 0;
+    /* margin: .5rem 4rem .5rem .4rem; */
+}
+
+.sugg-card .content .rent-info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    direction: rtl;
+}
+
+.sugg-card .content .rent-info > * {
+    padding-top: .4rem;
+}
+
+.sugg-card .content .name,
+.sugg-card .content .price {
+    font-weight: bold;
+    font-size: .9rem;
+}
+
+
+.sugg-card .content .price {
+    text-align: left;
+}
+
+.sugg-card .content .location {
+    font-size: .8rem;
+    /* not a good practice */
+    transform: translateY(.25rem);
+}
+
+.location-box {
+    display: flex;
+}
+
+.heart {
+    color: white;
+    background-color: rgb(255, 132, 38);
+    border-radius: 50%;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+}
+
+.lction-img {
+    width: 1.2rem;
+}
+
+.hr-blk-line {
+    border: none;
+    background-color: rgb(206, 206, 206);
+    width: 100%;
+    height: .09rem;
+}

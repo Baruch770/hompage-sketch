@@ -1,0 +1,31 @@
+.suggestions {
+    margin: 4rem 4rem 0 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.suggestions > div:not(:last-child) {
+    margin-bottom: 3rem;
+}
+
+.suggs-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.1rem;
+}
+
+
+@media (max-width: 768px) {
+    .suggestions {
+        margin: 4rem 1rem 0 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .suggs-block {
+        grid-template-columns: 1fr;
+    }
+} 

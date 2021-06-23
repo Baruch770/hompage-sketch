@@ -1,0 +1,29 @@
+.btn {
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 23px;
+    padding: 0.5rem 1.2rem;
+}
+
+.btn-orng {
+    background:linear-gradient(to bottom, rgb(253, 171, 67), rgb(200, 70, 10)) ;
+    color: white;
+}
+
+
+.btn-wht {
+    border:1px solid black;
+    background: transparent;
+    font-weight: 100;
+}
+
+
+
+.btn:focus {
+    outline: none;
+}
+
+.logo {
+    max-width: 180px;
+}

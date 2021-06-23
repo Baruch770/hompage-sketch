@@ -1,0 +1,110 @@
+.search-box-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin: -2rem 2rem 0 2rem;
+}
+
+.search-box {
+    max-width: 1200px;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+    box-shadow: 15px 8px 25px rgba(0, 0, 0, 0.1);
+    padding: .5rem 1rem;
+    /* margin: 0 2rem 0 2rem; */
+    background-color: white;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* z-index: 10; */
+}
+
+.search-box .items {
+    width: 80%;
+    direction: rtl;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-box .items h2 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    color: rgb(38, 38, 38);
+    font-weight: bold;
+
+}
+
+.search-box .items h3, 
+.search-box .items input::placeholder, 
+.search-box .items input {
+    font-size: 1rem;
+    font-family: inherit;
+    color: rgba(38, 38, 38);
+    font-weight: inherit;
+}
+
+.search-box .items>div {
+    border-left: 1px solid rgba(0, 0, 0, 0.24);
+    padding: .3rem .6rem .3rem .5rem;
+    width: 33.3%;
+}
+
+.search-box .button {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 100%;
+    padding: .6rem;
+    background: linear-gradient( to bottom, rgb(253, 171, 67), rgb(200, 70, 10));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-box .button button {
+    display: block;
+    background-color: inherit;
+    border: none;
+    font-size: 2.7rem;
+    color: white;
+    font-weight: 400;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+.search-box .mobile-input {
+    display: none;
+    width: 90%;
+    background: none;
+    font-weight: 600;
+}
+
+.search-box .mobile-input input {
+    width: 100% !important;
+    border: none;
+    padding: .2rem;
+}
+
+.search-box .mobile-input input::placeholder, .search-box .mobile-input input {
+    color: rgb(38, 38, 38);
+    font-size: 1.2rem;
+    font-weight: 800;
+}
+
+.search-box .mobile-input input:focus {
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .search-box .items {
+        display: none;
+    }
+    .search-box .mobile-input {
+        display: block;
+    }
+}

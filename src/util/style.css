@@ -1,0 +1,75 @@
+/* input */
+
+.input-box {
+    text-align: right;
+}
+
+.input-box label {
+    display: block;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.input-box input {
+    /* display: block; */
+    width: 100%;
+    border: none;
+    background: transparent;
+    /* margin: 0 ; */
+    font-size: 1rem;
+    font-weight: 200;
+    color: rgba(0, 0, 0, 0.24);
+    
+}
+
+.input-box input:focus {
+    outline: none;
+}
+
+/* title */
+
+.title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.title h3 {
+    display: inline;
+}
+
+.orng-line {
+    border: none;
+    width: 5rem;
+    height: 5px;
+    display: block;
+    margin: 0 auto;
+    /* variable */
+    background-color: rgb(255, 132, 38);
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+    .title h3 {
+        /* font-size: 2rem; */
+        display: block;
+    }
+}
+
+/* select pref */
+
+.select-box {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+
+}
+
+.select-box .text {
+    padding-left: 2rem;
+}
+
+.select-box .select select {
+    border: none;
+}
+

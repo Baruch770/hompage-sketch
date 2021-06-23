@@ -1,0 +1,26 @@
+.booked-houses {
+    margin: 4rem 4rem 6rem 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.booked-houses .booked-houses-block {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.1rem;
+}
+
+@media (max-width: 768px) {
+    .booked-houses {
+        margin: 4rem 1rem 6rem 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .booked-houses .booked-houses-block {
+        grid-template-columns: 1fr;
+    }
+} 

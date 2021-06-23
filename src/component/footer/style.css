@@ -1,0 +1,118 @@
+.footer-block {
+    display: flex;
+    justify-content: space-between;
+    direction: rtl;
+    padding: 2.5rem 4rem;
+    background-color: rgb(0, 43, 79);
+}
+
+.footer-block > div {
+    padding: 0 1rem;
+}
+
+.footer-block .footer-title h3 {
+    font-size: 1.7rem;
+    color: rgb(255, 132, 38);
+    text-align: right !important;
+}
+
+.footer-block .footer-title h3,
+.footer-block  .social .logo {
+    margin-bottom: 1rem;
+
+}
+
+.footer-form .input {
+    margin-right: .5rem;
+    margin-left: .5rem;
+}
+
+.footer-form .input input {
+    border: none;
+    display: block;
+    width: 100%;
+    padding: .7rem;
+    font-size: 1.1rem;
+    border-radius: 6px;
+}
+
+.footer-form  input:focus {
+    outline: none;
+}
+
+.footer-form > * {
+    margin: 0 0  1rem 0;
+
+}
+
+.footer-form .name-phone {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer-block .map p {
+    color: white;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.navbar-desk .navbar-logo {
+    max-width: rem;
+    height: auto;
+    cursor: pointer;
+}
+
+.footer-block  .social {
+    display: flex;
+    flex-direction: column;
+    direction: ltr;
+}
+
+.footer-block  .social .follow  {
+    display: flex;
+}
+
+.footer-block  .social .follow > div {
+    padding: 0 .5rem;
+}
+
+.footer-block  .social .follow  img {
+    width: 2rem;
+    height: auto;
+}
+
+.footer .about-page {
+    background-color: rgb(1, 39, 71);
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 4rem;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .footer-block {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .footer-block  .follow {
+        justify-content: center;
+    }
+
+    .footer-block .footer-title h3,
+    .footer-block .contact,
+    .footer-block  .social .logo {
+        display: none;
+    }
+
+    .footer .about-page {
+        flex-direction: column;
+        /* justify-content: center; */
+        align-items: center;
+        line-height: 1.4rem;
+    }
+
+} 
