@@ -1,12 +1,11 @@
 # Hompage sketch
 
 ## A screen shot of the page in desktop and mobile view
-
-### Mobile
+### `Mobile`
 
 ![Alt text](screenshots/mobile.png/?raw=true "Title")
 
-### Desktop
+### `Desktop`
 
-![Alt text](screenshots/destop.png/?raw=true "Title")
+![Alt text](screenshots/desktop.png/?raw=true "Title")
 
